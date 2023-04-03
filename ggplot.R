@@ -21,4 +21,29 @@ dat
 3 1 9
 
 ggplot()+geom_point(data=dat,aes(x=x,y=y),size=5,color="blue")
-ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="red")
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="red")+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,1))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,1))
+
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="cadetblue1")+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,5))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,5))
+
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="forestgreen")+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,5))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,5))
+
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="forestgreen",shape=10)+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,5))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,5))
+
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="forestgreen",shape=25)+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,5))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,5))
+
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="forestgreen",shape=112)+
+  scale_x_continuous(limits = c(0,15),breaks = seq(0,15,5))+
+  scale_y_continuous(limits = c(0,15),breaks = seq(0,15,5))
+
+seq(0,15,1)
+seq(0,15,5)
