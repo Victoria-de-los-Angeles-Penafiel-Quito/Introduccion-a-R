@@ -64,3 +64,24 @@ dat$x<-c(-2,13)
 dat$y<-c(7,-5)
 dat
 ggplot()+geom_line(data=dat,aes(x=x,y=y))
+
+#Graficar funciones
+x<-c(0,10)
+y<-3*x+1
+y
+dat<-data.frame(x,y)
+dat
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
+
+x<-c(0,10)
+y<--5*x-7
+y
+dat<-data.frame(x,y)
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
+
+x
+y<-.5*x-.73
+y
+dat<-data.frame(x,y)
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
+
