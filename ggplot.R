@@ -47,3 +47,20 @@ ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="forestgreen",shape=112)
 
 seq(0,15,1)
 seq(0,15,5)
+
+#Graficar líneas
+x<-c(1,8)
+y<-c(3,10)
+
+dat<-data.frame(x,y)
+dat
+  x  y
+1 1  3
+2 8 10
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
+dat$x
+
+dat$x<-c(-2,13)
+dat$y<-c(7,-5)
+dat
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
